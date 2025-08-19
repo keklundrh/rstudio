@@ -47,7 +47,7 @@ PACKAGES=(
 	zlib-devel
 )
 
-sudo yum install -y "${PACKAGES[@]}"
+yum install -y "${PACKAGES[@]}"
 
 # overlay
 if [ -e install-overlay-yum ]; then
