@@ -139,7 +139,7 @@ subsection "Bootstrapping Boost"
 
 # build it
 subsection "Building Boost"
-./b2 -q ${BOOST_EXTRA}    \
+./b2 -q -j1 ${BOOST_EXTRA}    \
    cflags="${CFLAGS}"     \
    cxxflags="${CXXFLAGS}" \
    variant=release        \
